@@ -1,0 +1,251 @@
+html {
+  font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit
+}
+
+/*Настройка логотипа*/
+
+.logo {
+  height: 250px;
+  width: 250px;
+}
+
+
+/*Настройка Главного имени*/ 
+.MainName {
+  display: flex;
+  align-items: center;
+} 
+
+header {
+    background-color: #C7E4FE;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 10px;
+}
+/* Настройка Менюшки*/
+.menu{
+display: flex;
+justify-content: space-around;
+}
+.wallpaper{
+  background-image: url(img/wallpapermain2.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 0 50px;
+}
+.wallpapertwo{
+  background-image: url(img/wallpapermain.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu div{
+    margin: 10px;
+}
+    *,
+    *::before,
+    *::after {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      text-decoration: underline red;
+    
+    }
+/*Начинается код для слайдера о мастерах*/
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .slider__container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+      counter-increment: slide;
+      height: 250px;
+      position: relative;
+    }
+
+    .slider__item::before {
+      content: counter(slide) "/5";
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+      display: block;
+    }
+
+    .slider__item:nth-child(1) {
+      background-color: #ffd5d2;
+    }
+
+    .slider__item:nth-child(2) {
+      background-color: #ffd5d2;
+    }
+
+    .slider__item:nth-child(3) {
+      background-color: #ffd5d2;
+    }
+
+    .slider__item:nth-child(4) {
+      background-color: #ffd5d2;
+    }
+
+    .slider__item:nth-child(5) {
+      background-color: #ffd5d2;
+    }
+
+    .slider__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .slider__item img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .footer {
+      padding-bottom: 70px;
+      padding-top: 40px;
+    }
+    .Feedback{
+      background-color: #da5581;
+      color:#ffffff;
+    }
+    .Feedback::placeholder{
+      color:#ffffff;
+    }
+    .Feedback1{
+      background-color: #b18fc1;
+      color:#ffffff;      
+    }
+    .Feedback1::placeholder{
+      color:#ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+   }
+  
+   .decor {
+      position: relative;
+      max-width: 400px;
+      margin: 50px  10px 0px;
+      background: white;
+      border-radius: 30px;
+      text-decoration: underline red;
+   }
+   .form-left-decoration, .form-right-decoration {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      background: #da5581;
+      border-radius: 20px;
+   }
+   .form-left-decoration {
+      bottom: 60px;
+      left: -30px;
+   }
+   .form-right-decoration {
+      top: 60px;
+      right: -30px;
+   }
+   .form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
+      content: "";
+      position: absolute;
+      width: 50px;
+      height: 20px;
+      border-radius: 30px;
+      background: white;
+   }
+   .form-left-decoration:before {
+      top: -20px;
+   }
+   .form-left-decoration:after {
+      top: 20px;
+      left: 10px;
+   }
+   .form-right-decoration:before {
+      top: -20px;
+      right: 0;
+   }
+   .form-right-decoration:after {
+      top: 20px;
+      right: 10px;
+   }
+   .circle {
+      position: absolute;
+      bottom: 80px;
+      left: -55px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: white;
+   }
+   .form-inner {
+      padding: 50px;
+   }
+   .form-inner input, .form-inner textarea {
+      display: block;
+      width: 100%;
+      padding: 0 20px;
+      margin-bottom: 10px;
+      background: #E9EFF6;
+      line-height: 40px;
+      border-width: 0;
+      border-radius: 20px;
+      font-family: 'Roboto', sans-serif;
+   }
+   .form-inner input[type="submit"] {
+      margin-top: 30px;
+      background: #da5581;
+      border-bottom: 4px solid #ac4567;
+      color: white;
+      font-size: 14px;
+   }
+   .form-inner textarea {
+      resize: none;
+   }
+   .form-inner h3 {
+      margin-top: 0;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: #707981;
+   }
+   .ass {
+    text-decoration:underline red ;
+   }
