@@ -5,6 +5,9 @@ html {
     scroll-behavior: smooth;
     
 }
+.wrapper {
+  padding: 30px;
+}
 *{
     padding: 0;
     margin: 0;
@@ -37,19 +40,27 @@ header {
     box-sizing: border-box;
     padding: 20px 10px;
 }
+
+.redSpan {
+  color: #ac4567;
+  font-weight: bold;
+}
 /* Настройка Менюшки*/
 .menu{
-display: flex;
-justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
+  font-style: italic;
+  font-weight: bold;
+
 }
 .wallpaper{
-  background-image: url(img/wallpapermain2.png) ;
+  background-image: url(img/bg_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0 0 50px;
+  padding: 50px;
 }
 .wallpapertwo{
-  background-image: url(img/wallpapermain.png);
+  background-image: url(img/bg_1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -66,8 +77,12 @@ justify-content: space-around;
 
     body {
       margin: 0;
-      text-decoration: underline red;
+      text-decoration: underline #ac4567;
     
+    }
+    h1 {
+      text-align: center;
+      padding: 15px;
     }
 /*Начинается код для слайдера о мастерах*/
     .container {
@@ -136,6 +151,13 @@ justify-content: space-around;
       width: 100%;
       height: 100%;
     }
+    .Services{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
     .footer {
       padding-bottom: 70px;
       padding-top: 40px;
@@ -158,14 +180,23 @@ justify-content: space-around;
     * {
       box-sizing: border-box;
    }
+
+   .form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+   }
   
    .decor {
       position: relative;
-      max-width: 400px;
+      width: 400px;
       margin: 50px  10px 0px;
       background: white;
       border-radius: 30px;
-      text-decoration: underline red;
+      text-decoration: underline #ac4567;
+   }
+   .decor div, h3 {
+    padding: 15px;
    }
    .form-left-decoration, .form-right-decoration {
       content: "";
@@ -217,6 +248,8 @@ justify-content: space-around;
    }
    .form-inner {
       padding: 50px;
+      display: block;
+      align-self: center;
    }
    .form-inner input, .form-inner textarea {
       display: block;
@@ -246,6 +279,50 @@ justify-content: space-around;
       font-size: 24px;
       color: #707981;
    }
-   .ass {
-    text-decoration:underline red ;
+   .feedbackForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
    }
+   .Feedback {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    align-self: center;
+    height: 40px;
+    width: 50%;
+   }
+   .ass {
+    font-size: larger;
+   }
+   .ass a {
+    text-decoration:underline #ac4567 ;
+   }
+   .promotion--list li::marker {
+    color: red;
+    font-size: 1.5em;
+  }
+  .Contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    gap: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footerLinks{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  footer iframe {
+    height: 500px;
+  }
